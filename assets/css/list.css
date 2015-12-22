@@ -1,0 +1,108 @@
+body {
+	background-color: #f7f7f7;
+}
+ul {
+	list-style-type: none;
+	height: 80px;
+	width: auto;
+	margin-top:auto;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+	                0 3px 5px rgba(0, 0, 0, .2),
+	                0 5px 10px rgba(0, 0, 0, .2),
+	                0 20px 20px rgba(0, 0, 0, .15);
+	overflow:hidden;
+}
+header {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c47373+0,d17b6c+50,c98074+51,ba6c5e+100 */
+	background: #c47373; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c47373 0%, #d17b6c 50%, #c98074 51%, #ba6c5e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #c47373 0%,#d17b6c 50%,#c98074 51%,#ba6c5e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #c47373 0%,#d17b6c 50%,#c98074 51%,#ba6c5e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c47373', endColorstr='#ba6c5e',GradientType=0 ); /* IE6-9 */
+	text-align:center;
+}
+li {
+	display: inline-block;
+}
+ul a {
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 55px;
+	padding-left: 55px;
+	display: block;
+	line-height: 80px;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 21px;
+	color: #371C1C;
+}
+ul li a{
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+    transition: padding .4s, background .4s;
+    transition: all .4s .2s;
+    position: relative;
+}
+ul li:first-child a{
+    border-radius: 3px 0 0 3px;
+}
+ul li:last-child a{
+    border-radius: 0 3px 3px 0;
+}
+ul li a:hover, 
+ul li a:focus{
+    background: rgba(255,255,255,.2);
+    padding: 8px 25px 17px 25px;
+    transition: all .3s 0s;
+} 
+ul li a:active{
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1)); 
+    box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
+}
+ul li a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 9px;
+    margin-left: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .5);
+}
+ul li a:hover::before,
+ul li a:focus::before{
+    background: white;
+    box-shadow: 0 0 2px white, 
+                0 -1px 0 rgba(0, 0, 0, .4);
+}
+ul a:hover {
+	color: #FFF;
+}
+.list {
+	color: #CD5C5C;
+	background-color: #FFFACD;
+	border-radius: 10px;
+	height: 900px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+}
+.prenom {
+    text-align : center;
+}
+img {
+	width:500px;
+	height:400px;
+	border-radius: 30px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+input {
+	display : block;
+	float: right;
+	
+}

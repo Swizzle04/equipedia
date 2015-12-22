@@ -1,0 +1,261 @@
+body {
+	background-color: #f7f7f7;
+}
+ul.menu {
+	list-style-type: none;
+	height: 80px;
+	width: auto;
+	margin-top:auto;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+	                0 3px 5px rgba(0, 0, 0, .2),
+	                0 5px 10px rgba(0, 0, 0, .2),
+	                0 20px 20px rgba(0, 0, 0, .15);
+	overflow:hidden;
+}
+header {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c47373+0,d17b6c+50,c98074+51,ba6c5e+100 */
+	background: #c47373; /* Old browsers */
+	background: -moz-linear-gradient(top,  #c47373 0%, #d17b6c 50%, #c98074 51%, #ba6c5e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #c47373 0%,#d17b6c 50%,#c98074 51%,#ba6c5e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #c47373 0%,#d17b6c 50%,#c98074 51%,#ba6c5e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c47373', endColorstr='#ba6c5e',GradientType=0 ); /* IE6-9 */
+	text-align:center;
+}
+.menu li {
+	display: inline-block;
+}
+ul.menu a {
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-right: 55px;
+	padding-left: 55px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	line-height: 80px;
+	text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 21px;
+	color: #371C1C;
+}
+ul.menu li a{
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+    transition: padding .3s, background .3s;
+    transition: all .3s .1s;
+    position: relative;
+}
+ul.menu li:first-child a{
+    border-radius: 3px 0 0 3px;
+}
+ul.menu li:last-child a{
+    border-radius: 0 3px 3px 0;
+}
+ul.menu li a:hover, 
+ul.menu li a:focus{
+    background: rgba(255,255,255,.2);
+    padding: 8px 25px 17px 25px;
+    transition: all .3s 0s;
+} 
+ul.menu li a:active{
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1)); 
+    box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
+}
+ul.menu li a::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 9px;
+    margin-left: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .5);
+}
+ul.menu li a:hover::before,
+ul.menu li a:focus::before{
+    background: white;
+    box-shadow: 0 0 2px white, 
+                0 -1px 0 rgba(0, 0, 0, .4);
+}
+ul.menu a:hover {
+	color: #FFF;
+}
+
+.main {
+	background-color: #f7f7f7;
+}
+
+.banner {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	overflow: hidden;
+	width: 100%;
+}
+.banner__transform {
+	transition: all 0.5s ease-in-out;
+}
+.banner__transform:hover {
+	transform: scale(1.1,1.1);
+}
+
+.aside {
+	padding: 10px;
+	text-align: center;
+}
+.aside__content {
+	background-color: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcfad+1,ffd69e+46,fff5c1+100 */;
+	background: #ffcfad; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffcfad 1%, #ffd69e 46%, #fff5c1 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffcfad 1%,#ffd69e 46%,#fff5c1 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffcfad 1%,#ffd69e 46%,#fff5c1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcfad', endColorstr='#fff5c1',GradientType=0 ); /* IE6-9 */
+	border-radius: 20px;
+	padding: 10px;
+	margin:10px;
+}
+.aside__content--form {
+	background-color: #D2B48C;
+	margin: 10px;
+}
+.aside__content--map {
+	background-color: transparent;
+}
+.aside__title {
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+.form {
+	overflow: hidden;
+}
+.form__title {
+	color: #532e23;
+	text-align: center;
+	text-transform: uppercase;
+}
+.form__label {
+	display: block;
+	text-align: left;
+}
+.form__input {
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+	width: 90%;
+}
+.form__button {
+	background-color: #532e23;
+	border: 1px;
+	border-radius: 5px;
+	border-color: #efefef;
+	color: white;
+	float: right;
+	height: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	transition: 0.20s linear;
+	width: 50%;
+}
+.form__button:hover {
+	background-color: black;
+}
+
+.story {
+	background: #ede2c9 url('../img/tumblr_mefetxmPmc1rlt1ilo1_1280.jpg') no-repeat 0 bottom;
+	background-size: contain;
+	color: #532e23;
+	height: 500px;
+	z-index : 0;
+}
+.story__title {
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.story__description {
+	text-align: center;
+	color : #FF6666 ;
+}
+
+
+.horse__title {
+	color: #CD5C5C;
+	text-align: center;
+	font-size: xx-large;
+	text-transform: uppercase;
+}
+
+.chevaux {
+	color: #CD5C5C;
+	border-radius: 10px;
+	height: 160px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 10px;
+	position: relative;
+}
+.chevaux__transform {
+	position:absolute;
+	z-index:1;
+	height:150px;width:auto;
+	margin:0;
+	box-shadow:0 0 3px black;
+	-webkit-transition:all .5s cubic-bezier(.6,2,.4,1);
+	    -moz-transition:all .5s cubic-bezier(.6,2,.4,1);
+	     -ms-transition:all .5s cubic-bezier(.6,2,.4,1);
+	      -o-transition:all .5s cubic-bezier(.6,2,.4,1);
+	         transition:all .5s cubic-bezier(.6,2,.4,1);
+}
+.chevaux:hover .chevaux__transform{
+	z-index:5;
+	-webkit-transform: scale(1.5);
+	    -moz-transform: scale(1.5);
+	     -ms-transform: scale(1.5);
+	      -o-transform: scale(1.5);
+	         transform: scale(1.5);
+	box-shadow:0 0 10px black;
+}
+.chevaux__title {
+	text-transform: uppercase;
+	text-align: center;
+}
+.chevaux__description {
+	opacity: 0;
+	position: absolute;
+	top: 0 ;
+	text-align: center;
+	margin: 0 ; 
+	right: 0 ;
+	left: 0 ;
+	bottom: 0 ;
+}
+
+.footer {
+	background: transparent url('../img/couleur-orange.jpg') no-repeat center bottom;
+	background-size: cover;
+}
+.footer__description {
+	color: #712e23;
+	text-align: center;
+}
+.footer__link {
+	color: #712e23;
+	display: block;
+	text-align: center;
+	
+}
+.footer__link:hover {
+	color: none;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .footer__description {
+	text-align: left;
+  }
+  .footer__description--right {
+	text-align: right;
+  }
+}
