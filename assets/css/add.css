@@ -1,0 +1,169 @@
+body {
+	background-color: #FFDEAD;
+}
+ul.menu {
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3),
+	            0 3px 5px rgba(0, 0, 0, .2),
+	            0 5px 10px rgba(0, 0, 0, .2),
+	            0 20px 20px rgba(0, 0, 0, .15);
+	height: 80px;	            
+	list-style-type: none;
+	margin-top:auto;
+	overflow:hidden;
+	width: auto;
+}
+header {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c47373+0,d17b6c+50,c98074+51,ba6c5e+100 */
+	background:#8B4513; /* Old browsers */
+	background: -moz-linear-gradient(top, #a92a03 0%, #902302 44%, #6e1a00 100%);/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #a92a03 0%, #902302 44%, #6e1a00 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #a92a03 0%,#902302 44%,#6e1a00 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c47373', endColorstr='#8B4513',GradientType=0 ); /* IE6-9 */
+	text-align:center;
+}
+.menu li {
+	display: inline-block;
+}
+ul.menu a {
+	background-repeat: no-repeat;
+	background-position: right;
+	color: #FFDAB9;
+	display: block;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 21px;
+	line-height: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 30px;
+	padding-left: 30px;
+	text-decoration: none;
+}
+ul.menu li a{
+	overflow: hidden;
+	position: relative;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+    transition: padding .4s, background .4s;
+    transition: all .4s .2s;
+}
+ul.menu li:first-child a{
+    border-radius: 3px 0 0 3px;
+}
+ul.menu li:last-child a{
+    border-radius: 0 3px 3px 0;
+}
+ul.menu li a:hover, 
+ul.menu li a:focus{
+    background: rgba(255,255,255,.2);
+    padding: 8px 25px 17px 25px;
+    transition: all .4s 0s;
+} 
+ul.menu li a:active{
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.1)); 
+    box-shadow: 0 0 2px rgba(0,0,0,.3) inset;
+}
+ul.menu li a::before{
+	border-radius: 50%;
+    background: rgba(0, 0, 0, .5);
+	bottom: 9px;
+    content: '';
+    height: 4px;
+    left: 50%;
+    margin-left: -2px;
+    position: absolute;
+    width: 4px;
+}
+ul.menu li a:hover::before,
+ul.menu li a:focus::before{
+    background: white;
+    box-shadow: 0 0 2px white, 
+                0 -1px 0 rgba(0, 0, 0, .4);
+}
+ul.menu a:hover {
+	color:#E9967A;
+}
+
+h1.header {
+	color : #FFDEAD ;
+	text-align: center;
+    text-decoration: underline overline;
+}
+.footer {
+	background-color: #6e1a00;
+	background-size: cover;
+}
+.footer__description {
+	color: #FFDEAD;
+	text-align: center;
+}
+.footer__link {
+	color: #6e1a00;
+	display: block;
+	text-align: center;
+	
+}
+.footer__link:hover {
+	color: none;
+	text-decoration: none;
+}
+a.connectAdmins{
+	background-color: #6e1a00 ;
+	border: 1px;
+	border-radius: 5px;
+	border-color: #efefef;
+	color: white;
+	float: right;
+	height: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	transition: 0.20s linear;
+	width: 100%;
+}
+a.connectAdmins:hover {
+	background-color: black;
+}
+
+.form__button {
+	background-color: #6e1a00 ;
+	border: 1px;
+	border-radius: 5px;
+	border-color: #efefef;
+	color: white;
+	float: right;
+	height: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	transition: 0.20s linear;
+	width: 100%;
+}
+.form__button:hover {
+	background-color: black;
+}
+
+.form {
+	overflow: hidden;
+}
+.form__title {
+	color: #6e1a00;
+	text-align: center;
+	text-transform: uppercase;
+}
+.form__label {
+	display: block;
+	text-align: left;
+}
+.form__input {
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+	width: 90%;
+}
+
+@media (min-width: 768px) {
+  .footer__description {
+	text-align: left;
+  }
+  .footer__description--right {
+	text-align: right;
+  }
+}

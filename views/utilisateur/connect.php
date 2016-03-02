@@ -1,4 +1,14 @@
-
+<?php
+require_once($_SERVER['DOCUMENT_ROOT']."/IMIE/Equipedia/views/include/head.php");
+?>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/add.css">
+    <title>
+    Connexion
+    </title>
+<?php
+require_once($_SERVER['DOCUMENT_ROOT']."/IMIE/Equipedia/views/include/header.php");
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -21,8 +31,12 @@
             </tr>
             <tr>
                  <td> <button class="form__button">Envoyer</button></td>
+                 <td> <a class="connectAdmins" href="/IMIE/Equipedia/admin/index.php?c=admins&a=connect">Connexion Admins</a></td>
             </tr>
         </table>
      </form>
+    <?php
+require_once($_SERVER['DOCUMENT_ROOT']."/IMIE/Equipedia/views/include/footer.php");
+?>
 </body>
 </html>

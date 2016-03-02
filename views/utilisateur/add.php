@@ -1,3 +1,15 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT']."/IMIE/Equipedia/views/include/head.php");
+?>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/add.css">
+    <title>
+    Connexion
+    </title>
+<?php
+require_once($_SERVER['DOCUMENT_ROOT']."/IMIE/Equipedia/views/include/header.php");
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -42,5 +54,8 @@
             </tr>
         </table>
      </form>
+    <?php
+require_once($_SERVER['DOCUMENT_ROOT']."/IMIE/Equipedia/views/include/footer.php");
+?>
 </body>
 </html>

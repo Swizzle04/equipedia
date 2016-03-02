@@ -1,11 +1,24 @@
 <?php 
-require_once($_SERVER['DOCUMENT_ROOT']."IMIE/Boutique/library/db.php");
+require_once($_SERVER['DOCUMENT_ROOT']."IMIE/Equipedia/library/db.php");
 class Model_Utilisateur {
 	private $db;
 
 	public function __construct()
 	{
 		$this->db = DB::getInstance();
+	}
+		public function viewUtilisateurs($id)
+	{
+		$query = 'SELECT * FROM users WHERE id = '.$id.';';
+		$resultat = $this->db->get($query);
+		return $resultat;
+	}
+
+	public function listUtilisateurs()
+	{
+		$query = "SELECT * FROM users;";
+		$resultat = $this->db->get($query);
+		return $resultat;
 	}
 	public function addUtilisateur($nom, $prenom, $pseudo, $mdp, $email, $numtel, $adresse)
 	{
@@ -27,6 +40,21 @@ class Model_Utilisateur {
 		$result = $this->db->get($query);
 		return $result;
 	}
-}
+		public function modifyUtilisateur($id, $nom, $prenom, $pseudo, $mdp, $email, $numtel, $adresse)
+	{
+		$query = "UPDATE `users` SET `nom`=:nom,`prenom`=:prenom,`pseudo`=:pseudo,`mdp`=:mdp,`email`=:email,`numtel`=:numtel,`adresse`=:adresse WHERE id =".$id.";";
+		$tab = array(
+		'nom' => $nom,
+		'prenom' => $prenom,
+		'pseudo' => $pseudo,
+		'mdp' => $mdp,
+		'email' => $email,
+		'numtel' => $numtel,
+		'adresse' => $adresse,
+		);
+		$this->db->execute($query, $tab);
+	}
+} 
+
 
 ?>
